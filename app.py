@@ -15,26 +15,26 @@ from dash import dash_table
 
 df=pd.read_csv("empresas.csv")
 
-try:
+#try:
     # Try to import Google Colab's file upload
-    from google.colab import files
-    uploaded = files.upload()
-    print("Files uploaded successfully in Colab environment")
-except ModuleNotFoundError:
+    #from google.colab import files
+    #uploaded = files.upload()
+    #print("Files uploaded successfully in Colab environment")
+#except ModuleNotFoundError:
     # Alternative for local Jupyter notebooks
-    from IPython.display import display
-    import ipywidgets as widgets
+    #from IPython.display import display
+    #import ipywidgets as widgets
     
-    uploader = widgets.FileUpload(
-        accept='',  # Accept all file types
-        multiple=True  # Allow multiple file selection
-    )
-    display(uploader)
+    #uploader = widgets.FileUpload(
+        #accept='',  # Accept all file types
+        #multiple=True  # Allow multiple file selection
+    #)
+    #display(uploader)
     
     # To access uploaded files later:
     # uploaded_files = uploader.value
-    print("Please use the file uploader widget above")
-df=pd.read_csv("empresas.csv")
+    #print("Please use the file uploader widget above")
+#df=pd.read_csv("empresas.csv")
 #dashboards financiera
 
 #paso 1 inciar dash
