@@ -1,5 +1,5 @@
-!pip install Dash
-!pip install dash-bootstrap-components
+#!pip install Dash
+#!pip install dash-bootstrap-components
 import plotly as pl
 import plotly.express as px
 import numpy as np
