@@ -13,6 +13,8 @@ from dash import dash_table
 # Option 1: If you're in Google Colab, make sure you're connected to runtime
 # If you're not in Google Colab, use this alternative file upload approach:
 
+df=pd.read_csv("empresas.csv")
+
 try:
     # Try to import Google Colab's file upload
     from google.colab import files
